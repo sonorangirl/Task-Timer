@@ -1,0 +1,19 @@
+// ==========================================================================
+// Footer Styles
+// ==========================================================================
+
+.footer {
+	   position: relative;
+    bottom: 0;
+  	width: 100%;
+  	/* Set the fixed height of the footer here */
+ 	  height: 60px;
+ 	  clear: both;
+  	padding-top: 20px;
+  	background-color: $color-primary;
+  	
+  	p {
+  		color: $color-secondary;
+  	}
+}
+

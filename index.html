@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- <link rel="icon" href="../../favicon.ico"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <title>Task Timer</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Custom styles for this project -->
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Task Timer</a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li id="nav-about"><a href="#about">info</a></li>
+                        <li id="nav-codepen"><a href="#codepen">codepen</a></li>
+                        <li id="nav-github"><a href="#github">github</a></li>
+                        <li id="nav-contact"><a href="#contact">contact</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <!-- Begin page content -->
+        <div class="container-fluid">
+      
+            <div class="row header">
+                
+                <div class="col-sm-8 centered">
+                    <h1 class="text-center">Focus Me</h1>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-8 centered">
+                    
+                    <div class="timer">
+                        <div class="row">
+                            <div class="col-xs-2 time-adjust">
+                                <button id="break-up" class="btn btn-small center-block"><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></button>
+                                <p id="set-break-time" class="text-center adjust">5</p>
+                                <button id="break-down" class="btn btn-small center-block"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>
+                                <p class="text-center adjust">Break Time</p>
+                            </div>
+
+                            <div class="col-xs-8">
+                                <div class="clock"></div>
+                                <div class="inner-clock"><p><span id="minutes">25</span> <span>:</span> <span id="seconds">00</span></p></div>
+                            </div>
+
+                            <div class="col-xs-2 time-adjust">
+                                <button id="task-up" class="btn btn-small center-block"><span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span></button>
+                                <p id="set-task-time" class="text-center adjust">25</p>
+                                <button id="task-down" class="btn btn-small center-block"><span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></button>
+                                <p class="text-center adjust">Task Time</p>
+                            </div>
+                        </div>
+                    </div> 
+                    
+                    <div class="status">
+                        <div class="row">
+                            <div class="col-sm-8 centered">
+                                <h3 id="status-message" class="text-center">Add a Task Below</h3>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="controls">
+                        <div class="row centered">
+                            <div class="col-xs-4 control-start">
+                                <button id="start" class="btn btn-small">Start</button>
+                                <button id="unpaused" class="btn btn-small paused">Start</button>
+                            </div>
+                            <div class="col-xs-4 control-stop">
+                                <button id="stop" class="btn btn-small">Stop</button>
+                            </div>
+                            <div class="col-xs-4 control-reset">
+                                <button id="reset" class="btn btn-small">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="row full-width polygon">
+                <h3 class="text-center">My Tasks</h3>
+            </div>
+
+            <div class="tasks">
+                <div class="row">
+                    <div class="col-xs-10 col-sm-8 centered">
+                        
+                        <div class="input-group" name="newTask">
+                            <input type="text" name="taskItem" class="form-control" id="taskItemInput"placeholder="New Task">
+                            <span class="input-group-btn">
+                                <button id="add-task" class="btn btn-default" type="button">Add Task</button>
+                            </span>
+                        </div><!-- /input-group -->
+
+                        <div id="list" class="row">
+                            <div class="col-xs-7">
+                                <ul class="task-list"> 
+                                </ul>
+                            </div>
+                            <div class="col-xs-5">
+                                <div class="task-options">
+                                </div>
+                            </div> 
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div> <!-- end container-fluid -->
+
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted">Made by Erin Manahan for <a href="http://freecodecamp.com">FreeCodeCamp</a>.</p>
+            </div>
+        </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/tasks.js"></script>
+    
+        
+    </script>
+  </body>
+</html>

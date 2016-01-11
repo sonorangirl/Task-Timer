@@ -1,0 +1,67 @@
+// ==========================================================================
+// Base Styles
+// ==========================================================================
+
+html, body {
+  position: relative;
+  height: 100%;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+img {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box
+}
+
+body {
+  height: 100%;
+  font-family: $font-family--primary;
+  background-color: $color-primary;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-family--primary;
+  color: $color-secondary;
+}
+
+p {
+  font-family: $font-family--secondary;
+  color: $color-light;
+}
+
+body > .container-fluid {
+  padding: 60px 15px 0;
+}
+.container-fluid .text-muted {
+  margin: 20px 0;
+}
+
+a {
+  color: $color-accent;
+}
+
+button {
+  text-align: center;
+}
+
+//Remove bootstrap outline for visited buttons
+.btn:focus, a:focus {
+    outline: none !important;
+    color: $color-accent;
+}
+
+.container-fluid {
+  min-height: 100%;;
+}
+
+
