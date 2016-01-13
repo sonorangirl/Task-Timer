@@ -17,8 +17,9 @@
 .navbar-default {
   
   .navbar-brand {
-    display: none;
+    // display: none;
     margin-top: 10px;
+    margin-left: 10px;
     color: $color-accent;
     font-weight: $font-weight--medium;
 
@@ -38,11 +39,23 @@
         text-transform: lowercase;
         margin: 10px 5px 5px 5px;
         border-radius: $br--default;
+
+          @media (max-width: $break-small) {
+            text-align: center;
+            color: $color-primary;
+          }
       }
+
       > a:hover, > a:active, > a:focus {
         color: $color-secondary;
         border: 1px solid $color-secondary;
+
+          @media (max-width: $break-small) {
+            color: $color-accent;
+            border-color: $color-accent;
+          }
       }
+
       > a:visited {
         text-decoration: none;
       }
@@ -92,35 +105,7 @@
 } //end .navbar-default
 
 
-// Transition Navbar Styles
-/* .solid class attached on scroll past first section */
 
-// .navbar.solid {
-//   background-color: $color-secondary;
-//   transition: background-color 1s ease 0s;
-//   box-shadow: 0 0 4px $color-shadow;
-
-//     .navbar-brand {
-//       display: inline-block;
-//       color: $color-light;
-//       transition: color 1s ease 0s;
-//     }
-
-//     .navbar-nav {
-
-//        > li {
-
-//           > a {
-//             color: $color-light;
-//             transition: color 1s ease 0s;
-//           }
-
-//        } //end li
-
-//     } //end .navbar-nav
-
-// }
-//
 
 
 

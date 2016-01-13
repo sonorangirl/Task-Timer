@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
 
-////Set Time Buttons////
+////Set Time Control Buttons////
 
 //breaks
 var breakTime = 5;
@@ -105,6 +105,7 @@ function countdown() {
 		}
 
 		count = getCurrentTime() * 60;
+
 		timer();
 
 	}
@@ -126,6 +127,9 @@ var start = $('#start').click(function() {
 	$('.clock').css({
         'border-width': '150px',
         'webkit-transition-duration' : count + 's',
+        '-moz-transition-duration' : count + 's',
+		'-ms-transition-duration' : count + 's',
+		'-o-transition-duration': count + 's',
         'transition-duration': count + 's'
     });
 
@@ -137,16 +141,33 @@ var stop = $('#stop').click(function() {
 	$('#unpaused').removeClass('paused');
 	
 	//pauses border transition
+	var border = $('.clock').css('border-width');
+	$('.clock').css({
+		'-webkit-transition' : 'none',
+		'-moz-transition' : 'none',
+		'-ms-transition' : 'none',
+		'-o-transition': 'none',
+		'transition': 'none',
+		'border-width': border
+	});
+	
+	
 });
 
 var unpause = $('#unpaused').click(function() {
-	seconds = currentSec;
-	minutes = currentMin;
 	timer();
 	$('#start').removeClass('paused');
 	$('#unpaused').addClass('paused');
 	
 	//restarts border transition
+	$('.clock').css({
+        'border-width': '150px',
+        'webkit-transition' : count + 's linear',
+        '-moz-transition' : count + 's linear',
+		'-ms-transition' : count + 's linear',
+		'-o-transition': count + 's linear',
+        'transition': count + 's linear'
+    });
 
 });
 
@@ -162,12 +183,14 @@ var reset = $('#reset').click(function() {
 	$('#seconds').html(seconds);
 
 	//resets border to original size
-});
-
-
-
+	$('.clock').css('border-width', '5px');
 
 });
+
+
+
+
+});  // end document.ready
 
 
 

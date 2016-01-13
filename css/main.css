@@ -101,8 +101,8 @@ button {
   transition: background-color 1s ease 0s; }
 
 .navbar-default .navbar-brand {
-  display: none;
   margin-top: 10px;
+  margin-left: 10px;
   color: #B93848;
   font-weight: 400; }
   .navbar-default .navbar-brand:hover {
@@ -114,9 +114,17 @@ button {
   text-transform: lowercase;
   margin: 10px 5px 5px 5px;
   border-radius: 5px; }
+  @media (max-width: 768px) {
+    .navbar-default .navbar-nav > li > a {
+      text-align: center;
+      color: #3A0842; } }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
   color: #770058;
   border: 1px solid #770058; }
+  @media (max-width: 768px) {
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:active, .navbar-default .navbar-nav > li > a:focus {
+      color: #B93848;
+      border-color: #B93848; } }
 .navbar-default .navbar-nav > li > a:visited {
   text-decoration: none; }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
@@ -138,7 +146,6 @@ button {
   color: #3A0842;
   background-color: #770058; }
 
-/* .solid class attached on scroll past first section */
 .header {
   margin-top: -5em;
   margin-bottom: 2em; }
@@ -282,6 +289,16 @@ button {
   background-color: #3A0842; }
   .footer p {
     color: #770058; }
+
+.modal-content {
+  background-color: #F6F8F2; }
+  .modal-content p {
+    color: #770058; }
+  .modal-content a {
+    color: #B93848; }
+  .modal-content .modal-footer button {
+    background-color: #3A0842;
+    color: #F6F8F2; }
 
 @media print {
   * {
