@@ -97,6 +97,9 @@ function countdown() {
 	if (count === 0) {
 		audio.play();
 		clearInterval(engage);
+		//resets border to original size
+		$('.clock').css('border-width', '5px');
+
 
 		if (isBreak) {
 			isBreak = false;
