@@ -225,9 +225,10 @@ button {
   color: #2A52B7;
   margin-left: -15px;
   margin-right: -15px; }
+  .tasks h3 {
+    margin-top: 40px; }
   .tasks .input-group {
-    padding: 2em;
-    margin-top: -5%; }
+    padding: 2em; }
     .tasks .input-group #taskItemInput {
       background-color: #41A6AF;
       border: solid 3px #2A52B7;
