@@ -2,7 +2,7 @@
 // Section Styles
 // ==========================================================================
 
-//Timer Section
+//// Timer Section ////
 
 .time-adjust {
 	padding-top: 7.5em;
@@ -39,7 +39,7 @@
 	width: 300px;
 	max-width: 100%;
 	border-radius: 50%;
-	border: 5px solid $color-accent;
+	border: 5px solid $color-light;
 	margin: 0 auto;
 	background-color: $color-secondary;
 	text-align: center;
@@ -53,7 +53,7 @@
     transition:5s linear;
 }
 
- .inner-clock {
+.inner-clock {
 
  	margin: 0 auto;
     margin-top: -300px;
@@ -69,7 +69,7 @@
     		font-size: 80%;
     	}
 	}
- }
+}
 
 
 //Status
@@ -77,8 +77,6 @@
 .status {
 	padding-bottom: 2em;
 }
-
-
 
 
 //Controls
@@ -93,41 +91,38 @@
 	padding: 1em;
 
 	button {
-		color: $color-accent;
+		color: $color-secondary;
 		background-color: $color-primary;
-		border-color: $color-accent;
+		border-color: $color-secondary;
 
 		&:hover {
 			background-color: $color-secondary;
 			color: $color-accent;
-			border-color: $color-secondary;
+			border-color: $color-accent;
 		}
-
-
-
 	}
 }
 
 
 
-//Tasks
+//// Tasks ////
 
-.polygon {
-	background-color: $color-secondary;
-	color: $color-primary;
-	padding: 2em;
-	-webkit-clip-path: polygon(15% 0, 83% 0, 100% 100%, 0% 100%);
-	clip-path: polygon(15% 0, 83% 0, 100% 100%, 0% 100%);
+// .polygon {
+// 	background-color: $color-secondary;
+// 	color: $color-primary;
+// 	padding: 2em;
+// 	-webkit-clip-path: polygon(15% 0, 83% 0, 100% 100%, 0% 100%);
+// 	clip-path: polygon(15% 0, 83% 0, 100% 100%, 0% 100%);
 
-	h3 {
-		color: $color-primary;
-		font-weight: bold;
-	}
-}
+// 	h3 {
+// 		color: $color-primary;
+// 		font-weight: bold;
+// 	}
+// }
 
 
 .tasks {
-	background-color: $color-secondary;
+	// background-color: $color-secondary;
 	color: $color-primary;
 	margin-left: -15px;
     margin-right: -15px;
@@ -211,29 +206,5 @@
 
 
 	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

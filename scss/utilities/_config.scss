@@ -22,16 +22,19 @@ $Violet: #3A0842; //rgba(58, 8, 66, 100);
 $Flirt: #770058; //rgba(119, 0, 88, 100);
 $SpringWood: #F6F8F2; //rgba(246, 248, 242, 100);
 $Charade: #272838; //rgba(39, 40, 56, 100);
-$Mandy: #B93848; //rgba(185, 56, 72, 100);
+$Mandy: #EF475B; //rgba(185, 56, 72, 100);
+$CeruleanBlue: #2A52B7;
+$VerdigrisGreen: #41A6AF;
+
 
 // Color Usage
 
-$color-primary   : $Violet;
-$color-secondary : $Flirt;
+$color-primary   : $CeruleanBlue;
+$color-secondary : $VerdigrisGreen;
 $color-light     : $SpringWood;
 $color-dark		 : $Charade;
-$color-accent	 : $Mandy;
-$color-shadow    : rgba($Violet, .2);
+$color-accent	 : $SpringWood;//#8FA3E0;
+$color-shadow    : rgba($CeruleanBlue, .2);
 
 // Color Palette Modifiers
 
